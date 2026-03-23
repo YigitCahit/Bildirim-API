@@ -1,0 +1,31 @@
+{
+  "name": "bildirim-api",
+  "version": "0.1.0",
+  "description": "Web Push Notification API with Fastify, PostgreSQL and BullMQ",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "worker": "node src/queue/worker.js",
+    "migrate": "node scripts/migrate.js",
+    "lint": "echo \"No lint configured\"",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "keywords": [
+    "fastify",
+    "notifications",
+    "web-push",
+    "bullmq"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/rate-limit": "^10.3.0",
+    "bullmq": "^5.12.7",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "fastify-plugin": "^5.0.1",
+    "ioredis": "^5.4.1",
+    "pg": "^8.12.0",
+    "web-push": "^3.6.7"
+  }
+}
