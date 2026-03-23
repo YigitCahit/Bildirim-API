@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/rate-limit": "^9.1.0",
     "bullmq": "^5.12.7",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
